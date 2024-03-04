@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "author": "virat kohli",
+      "title": "css"
+    },
+    {
+      "id": "2",
+      "author": "dhoni",
+      "title": "java script"
+    },
+    {
+      "id": "e78d",
+      "title": "sss",
+      "author": "ss"
+    },
+    {
+      "id": "8dda",
+      "title": "ss",
+      "author": "sss"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
