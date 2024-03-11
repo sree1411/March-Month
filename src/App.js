@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+ 
 import './App.css';
+import { Routes, Route } from 'react-router';
+import LandingPage from './pages/LandingPage';
+import MobilePage from './pages/MobilePage';
+import MobileInfoPage from './pages/MobileInfoPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React application
-        </a>
-      </header>
-    </div>
+     
+     <>
+       <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='/mobiles' element={<MobilePage/>}/>
+        <Route path='/mobiles/:id' element={<MobileInfoPage/>}/>
+        <Route path='/cart' element={<CartPage/>}/>
+
+       </Routes>
+     </>
   );
 }
 
